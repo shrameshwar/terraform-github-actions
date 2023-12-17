@@ -1,7 +1,7 @@
 provider "google" {
   project = "sbd0-project-migration"
-  region = "e2-europe1"
-  zone = "e2-europe1-a"
+  region  = "e2-europe1"
+  zone    = "e2-europe1-a"
 }
 
 resource "google_compute_instance" "default" {
@@ -20,7 +20,7 @@ resource "google_compute_instance" "default" {
     }
   }
 
-   network_interface {
+  network_interface {
     network = "default"
 
     access_config {
